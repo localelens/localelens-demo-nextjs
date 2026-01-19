@@ -133,3 +133,6 @@ This matches the keys used in the demo UI.
   }
 }
 ```
+
+🔗 Learn more at https://localelens.ai  
+📚 Documentation: https://localelens.ai/docs
