@@ -6,6 +6,8 @@ No translation framework.
 No JSON files.
 Just `fetch()`.
 
+> **Looking for a full-featured example?** See the [TanStack Start demo](https://github.com/localelens/localelens-demo-tanstack-start) for SSR, authentication, and protected routes.
+
 ---
 
 ## What This Demo Is?
@@ -79,60 +81,13 @@ src/
 
 ---
 
-### Quick Import (Optional)
+## Optional: Import Demo Translations
 
-To quickly populate your LocaleLens project, copy and import this JSON via the LocaleLens UI.
+This repository includes [`docs/localelens-demo-translations.json`](docs/localelens-demo-translations.json) which can be imported into a new LocaleLens project to instantly populate all demo translations.
 
-This JSON is **for import only**. The app itself does **not** read from JSON files.
+📄 [View translations](docs/localelens-demo-translations.json) · 📥 [Download](https://raw.githubusercontent.com/localelens/localelens-demo-nextjs/main/docs/localelens-demo-translations.json) (right-click → Save As)
 
-This matches the keys used in the demo UI.
-
-```json
-{
-  "en": {
-    "app.title": "LocaleLens Demo",
-    "home.title": "Welcome",
-    "home.description": "This demo shows how LocaleLens replaces file-based i18n with a simple API fetch.",
-    "home.how_it_works": "How it works",
-    "home.step_1": "Translations are fetched from LocaleLens at request time",
-    "home.step_2": "Next.js caches the response for 60 seconds",
-    "home.step_3": "No JSON files, no framework, just fetch()",
-    "home.missing_key_title": "Missing key fallback",
-    "home.missing_key_description": "When a key doesn't exist, the key itself is returned:",
-    "nav.about": "About",
-    "nav.home": "Home",
-    "about.title": "About This Demo",
-    "about.description": "This is a minimal i18n implementation for Next.js using LocaleLens.",
-    "about.no_framework": "No Framework",
-    "about.no_framework_detail": "No next-intl, no next-i18next. Just a simple getTranslations() function.",
-    "about.server_first": "Server First",
-    "about.server_first_detail": "Translations are fetched in server components. No client-side state.",
-    "about.cache_friendly": "Cache Friendly",
-    "about.cache_friendly_detail": "Next.js fetch revalidation handles caching automatically."
-  },
-  "de": {
-    "app.title": "LocaleLens Demo",
-    "home.title": "Willkommen",
-    "home.description": "Diese Demo zeigt, wie LocaleLens dateibasiertes i18n durch einen einfachen API-Aufruf ersetzt.",
-    "home.how_it_works": "So funktioniert es",
-    "home.step_1": "Übersetzungen werden zur Laufzeit von LocaleLens abgerufen",
-    "home.step_2": "Next.js cached die Antwort für 60 Sekunden",
-    "home.step_3": "Keine JSON-Dateien, kein Framework – einfach fetch()",
-    "home.missing_key_title": "Fehlender Key",
-    "home.missing_key_description": "Wenn ein Key nicht existiert, wird der Key selbst zurückgegeben:",
-    "nav.about": "Über",
-    "nav.home": "Start",
-    "about.title": "Über diese Demo",
-    "about.description": "Eine minimale i18n-Implementierung für Next.js mit LocaleLens.",
-    "about.no_framework": "Kein Framework",
-    "about.no_framework_detail": "Kein next-intl, kein next-i18next. Nur eine einfache getTranslations()-Funktion.",
-    "about.server_first": "Server-First",
-    "about.server_first_detail": "Übersetzungen werden in Server-Komponenten geladen. Kein Client-State.",
-    "about.cache_friendly": "Cache-freundlich",
-    "about.cache_friendly_detail": "Die Fetch-Revalidierung von Next.js übernimmt das Caching automatisch."
-  }
-}
-```
+This file exists **only to make the demo easy to reproduce**. The app itself fetches translations from LocaleLens at runtime — it does **not** read from this JSON file.
 
 🔗 Learn more at https://localelens.ai  
 📚 Documentation: https://localelens.ai/docs
