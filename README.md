@@ -1,6 +1,6 @@
 # LocaleLens Next.js Demo
 
-A minimal i18n setup for Next.js using [LocaleLens](https://localelens.ai).
+A minimal i18n setup for Next.js using [LocaleLens](https://localelens.ai) — translation infrastructure for developers. Update translations in production without redeploying.
 
 No translation framework.
 No JSON files.
